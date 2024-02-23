@@ -76,9 +76,9 @@ int ft_format(va_list arguments, char format)
 	else if (format == 'u')
 		//se imprime un numero decimal unsigned (base 10)
 		counter += ft_putnbrunsig(va_arg(arguments,unsigned int));
-	//else if (format == 'x' || format == 'X' )
+	else if (format == 'x' || format == 'X' )
 		//se imprime un numero hexadecimal en minusculas o mayusculas.
-		//counter += ft_puthex(va_arg(arguments, unsigned int), format);
+		counter += ft_put_print_hex(va_arg(arguments, unsigned int), format);
 	else if (format == '%')
 		//se imprime el %
 		counter += ft_putchar('%');
@@ -119,7 +119,7 @@ int ft_printf(char const *str, ...)
 	
 	return (size);
 }
-
+/*
 int main()
 {
 	int size;
@@ -129,3 +129,4 @@ int main()
 	printf("\n%d",size);
 	return (0);
 }
+*/

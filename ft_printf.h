@@ -29,5 +29,5 @@ int		ft_format(va_list arguments, char format);
  * Funciones hexadecimal
  */
 int		ft_putptr(unsigned long long nbr);
-int		ft_puthex(unsigned int nbr);
+int		ft_put_print_hex(unsigned int nbr, const char format);
 #endif
