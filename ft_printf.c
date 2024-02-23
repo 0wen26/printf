@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include "libft.h"
+#include "ft_printf.h"
 //funcion imprime char
 int ft_putchar(int c)
 {
@@ -66,9 +67,9 @@ int ft_format(va_list arguments, char format)
 	else if (format == 's')
 		//imprimimos string
 		counter += ft_putstr(va_arg(arguments, char *));
-//	else if (format == 'p')
+	else if (format == 'p')
 		//se imrpime puntero void en hexadecimal( ni idea aun )
-//		counter += ft_putptr(va_arg(arguments, unsigned long long));
+		counter += ft_putptr(va_arg(arguments, unsigned long long));
 	else if (format == 'd' || format == 'i')
 		//se imprime un numero decimal (base 10)
 		counter += ft_putnbr(va_arg(arguments, int));
@@ -122,7 +123,9 @@ int ft_printf(char const *str, ...)
 int main()
 {
 	int size;
-	size = ft_printf("Hola que %s tal %u","Hola", 55 );
+	int num = 10;
+	void *ptr = &num;
+	size = ft_printf("Hola que %s tal %p","Hola", ptr );
 	printf("\n%d",size);
 	return (0);
 }

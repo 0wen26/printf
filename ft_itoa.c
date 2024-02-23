@@ -6,11 +6,11 @@
 /*   By: rherraiz <rherraiz@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:14:53 by rherraiz          #+#    #+#             */
-/*   Updated: 2024/02/23 00:56:39 by root             ###   ########.fr       */
+/*   Updated: 2024/02/23 03:29:17 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static void	ft_string(char *str, unsigned int len, unsigned int n)
 {

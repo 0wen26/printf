@@ -1,6 +1,10 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+
+# include <stdio.h>
+# include <unistd.h>
+# include <stdarg.h>
+# include <stdlib.h>
 /*
  * Funcion principal
  */
@@ -16,7 +20,7 @@ int		ft_putstr(char *str);
 int		ft_putnbr(int nbr);
 int		ft_putnbrunsig(unsigned int nbr);
 char	*ft_itoa(int nbr);
-char	*ft_unitoa(int nbr);
+char	*ft_unitoa(unsigned int nbr);
 /*
  * Funcion formato
  */
@@ -26,3 +30,4 @@ int		ft_format(va_list arguments, char format);
  */
 int		ft_putptr(unsigned long long nbr);
 int		ft_puthex(unsigned int nbr);
+#endif
