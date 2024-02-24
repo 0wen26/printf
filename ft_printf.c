@@ -122,11 +122,62 @@ int ft_printf(char const *str, ...)
 /*
 int main()
 {
-	int size;
-	int num = 10;
-	void *ptr = &num;
-	size = ft_printf("Hola que %s tal %p","Hola", ptr );
-	printf("\n%d",size);
-	return (0);
+    
+    //tests mios
+    ft_printf("\n NULL %s NULL ", NULL);
+    ft_printf("\n2 %p %p ", 0, 0);
+    ft_printf("\n 1 %u ", -1);
+    ft_printf("\n 2 %u ", -9);
+    ft_printf("\n 3 %u ", -10);
+    ft_printf("\n 4 %u ", -11);
+    ft_printf("\n 5 %u ", -14);
+    ft_printf("\n 6 %u ", -15);
+    ft_printf("\n 7 %u ", -16);
+    ft_printf("\n 8 %u ", -99);
+    ft_printf("\n 9 %u ", -100);
+    ft_printf("\n 10 %u ", -101);
+    ft_printf("\n 11 %u ", INT_MIN);
+    ft_printf("\n 12 %u ", LONG_MAX);
+    ft_printf("\n 13 %u ", UINT_MAX);
+    ft_printf("\n 14 %u ", ULONG_MAX);
+    ft_printf("\n 15 %u ", 9223372036854775807LL);
+    ft_printf("\n %u ", 0);
+    ft_printf("\n %u ", LONG_MIN);
+    ft_printf("\n %u %u %u %u %u %u %u", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
+    printf("\n news");
+    ft_printf("\n %x ", 0);
+    ft_printf("\n %x ", LONG_MIN);
+    int caca = ft_printf("\n %x %x %x %x %x %x %x", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
+    printf("\n%i", caca);
+    //tests buenos
+    printf("\n NULL %s NULL ", NULL);
+    printf("\n2 %p %p ", 0, 0);
+    printf("\n3 %u ", -1);
+    printf("\n4 %u ", -9);
+    printf("\n5 %u ", -10);
+    printf("\n6 %u ", -11);
+    printf("\n7 %u ", -14);
+    printf("\n8 %u ", -15);
+    printf("\n9 %u ", -16);
+    printf("\n10 %u ", -99);
+    printf("\n11 %u ", -100);
+    printf("\n12 %u ", -101);
+    printf("\n13 %u ", INT_MIN);
+    printf("\n14 %u ", LONG_MAX);
+    printf("\n15 %u ", UINT_MAX);
+    printf("\n16 %u ", ULONG_MAX);
+    printf("\n17 %u ", 9223372036854775807LL);
+    printf("\n %U ", 0);
+    printf("\n %u ", LONG_MIN);
+    printf("\n %u %u %u %u %u %u %u", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
+    printf("\n news");
+    printf("\n %x ", 0);
+    printf("\n %x ", LONG_MIN);
+    int size = printf("\n %x %x %x %x %x %x %x", INT_MAX, INT_MIN, LONG_MAX, LONG_MIN, ULONG_MAX, 0, -42);
+    printf("\n %i", size);
+    return (0);
+    
 }
 */
+
+
